@@ -1,7 +1,6 @@
 ﻿using Android.App;
 using Android.Content;
 using Android.Graphics;
-using MeteoMoodApp.Platforms.Android;
 using MeteoMoodApp.Interfaces;
 using Application = Android.App.Application;
 using Android.OS;

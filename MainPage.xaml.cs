@@ -2,10 +2,7 @@
 using MeteoMoodApp.Services;
 using MeteoMoodApp.Models;
 using System.Diagnostics;
-using System;
-using Microsoft.Maui.Controls;
 using System.Collections.ObjectModel;
-//using Android.Service.Wallpaper;
 
 namespace MeteoMoodApp
 {
