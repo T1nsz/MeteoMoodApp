@@ -13,125 +13,125 @@ namespace MeteoMoodApp.Models
     /// </para>
     /// </summary>
     /// 
-    public class WeatherData
-    {
-        [JsonProperty("name")]
-        public string City { get; set; }
+        public class WeatherData
+        {
+            [JsonProperty("name")]
+            public string City { get; set; }
 
-        [JsonProperty("coord")]
-        public Coord Coordinates { get; set; }
+            [JsonProperty("coord")]
+            public Coord Coordinates { get; set; }
 
-        [JsonProperty("weather")]
-        public List<Weather> WeatherConditions { get; set; }
+            [JsonProperty("weather")]
+            public List<Weather> WeatherConditions { get; set; }
 
-        [JsonProperty("base")]
-        public string Base { get; set; }
+            [JsonProperty("base")]
+            public string Base { get; set; }
 
-        [JsonProperty("main")]
-        public Main MainInfo { get; set; }
+            [JsonProperty("main")]
+            public Main MainInfo { get; set; }
 
-        [JsonProperty("visibility")]
-        public long Visibility { get; set; }
+            [JsonProperty("visibility")]
+            public long Visibility { get; set; }
 
-        [JsonProperty("wind")]
-        public Wind WindInfo { get; set; }
+            [JsonProperty("wind")]
+            public Wind WindInfo { get; set; }
 
-        [JsonProperty("clouds")]
-        public Clouds CloudInfo { get; set; }
+            [JsonProperty("clouds")]
+            public Clouds CloudInfo { get; set; }
 
-        [JsonProperty("dt")]
-        public long Timestamp { get; set; }
+            [JsonProperty("dt")]
+            public long Timestamp { get; set; }
 
-        [JsonProperty("sys")]
-        public Sys SystemInfo { get; set; }
+            [JsonProperty("sys")]
+            public Sys SystemInfo { get; set; }
 
-        [JsonProperty("id")]
-        public long Id { get; set; }
+            [JsonProperty("id")]
+            public long Id { get; set; }
 
-        [JsonProperty("cod")]
-        public long StatusCode { get; set; }
-    }
+            [JsonProperty("cod")]
+            public long StatusCode { get; set; }
+        }
 
-    public class Clouds
-    {
-        [JsonProperty("all")]
-        public int All { get; set; }
-    }
+        public class Clouds
+        {
+            [JsonProperty("all")]
+            public int All { get; set; }
+        }
 
-    public class Coord
-    {
-        [JsonProperty("lon")]
-        public double Longitude { get; set; }
+        public class Coord
+        {
+            [JsonProperty("lon")]
+            public double Longitude { get; set; }
 
-        [JsonProperty("lat")]
-        public double Latitude { get; set; }
-    }
+            [JsonProperty("lat")]
+            public double Latitude { get; set; }
+        }
 
-    public class Main
-    {
-        [JsonProperty("temp")]
-        public double Temperature { get; set; }
+        public class Main
+        {
+            [JsonProperty("temp")]
+            public double Temperature { get; set; }
 
-        [JsonProperty("feels_like")]
-        public double FeelsLike { get; set; }
+            [JsonProperty("feels_like")]
+            public double FeelsLike { get; set; }
 
-        [JsonProperty("temp_min")]
-        public double MinimumTemperature { get; set; }
+            [JsonProperty("temp_min")]
+            public double MinimumTemperature { get; set; }
 
-        [JsonProperty("temp_max")]
-        public double MaximumTemperature { get; set; }
+            [JsonProperty("temp_max")]
+            public double MaximumTemperature { get; set; }
 
-        [JsonProperty("pressure")]
-        public int Pressure { get; set; }
+            [JsonProperty("pressure")]
+            public int Pressure { get; set; }
 
-        [JsonProperty("humidity")]
-        public int Humidity { get; set; }
-    }
+            [JsonProperty("humidity")]
+            public int Humidity { get; set; }
+        }
 
-    public class Sys
-    {
-        [JsonProperty("type")]
-        public int Type { get; set; }
+        public class Sys
+        {
+            [JsonProperty("type")]
+            public int Type { get; set; }
 
-        [JsonProperty("id")]
-        public int Id { get; set; }
+            [JsonProperty("id")]
+            public int Id { get; set; }
 
-        [JsonProperty("country")]
-        public string Country { get; set; }
+            [JsonProperty("country")]
+            public string Country { get; set; }
 
-        [JsonProperty("sunrise")]
-        public int Sunrise { get; set; }
+            [JsonProperty("sunrise")]
+            public int Sunrise { get; set; }
 
-        [JsonProperty("sunset")]
-        public int Sunset { get; set; }
-    }
+            [JsonProperty("sunset")]
+            public int Sunset { get; set; }
+        }
 
-    public class Weather
-    {
-        [JsonProperty("id")]
-        public int Id { get; set; }
+        public class Weather
+        {
+            [JsonProperty("id")]
+            public int Id { get; set; }
 
-        [JsonProperty("main")]
-        public string Main { get; set; }
+            [JsonProperty("main")]
+            public string Main { get; set; }
 
-        [JsonProperty("description")]
-        public string Description { get; set; }
+            [JsonProperty("description")]
+            public string Description { get; set; }
 
-        [JsonProperty("icon")]
-        public string Icon { get; set; }
-    }
+            [JsonProperty("icon")]
+            public string Icon { get; set; }
+        }
 
-    public class Wind
-    {
-        [JsonProperty("speed")]
-        public double Speed { get; set; }
+        public class Wind
+        {
+            [JsonProperty("speed")]
+            public double Speed { get; set; }
 
-        [JsonProperty("deg")]
-        public int Direction { get; set; }
+            [JsonProperty("deg")]
+            public int Direction { get; set; }
 
-        [JsonProperty("gust")]
-        public double Gust { get; set; }
-    }
+            [JsonProperty("gust")]
+            public double Gust { get; set; }
+        }
 
 
 
